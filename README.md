@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-DeepLearning-orange)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Framework-red)
-![Manim](https://img.shields.io/badge/manim-animation-blue)
+![Manim](https://img.shields.io/badge/manim-animation-green)
 ---
 
 ## 📌 Overview
