@@ -1,110 +1,179 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deep Learning Models for Cryptocurrency Prediction</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        .video-container {
-            margin: 20px 0;
-        }
-        iframe {
-            width: 100%;
-            max-width: 720px;
-            height: 400px;
-            border-radius: 10px;
-        }
-        ul {
-            margin-top: 10px;
-        }
-        .box {
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-    </style>
-</head>
-<body>
+# 🚀 Deep Learning Models for Cryptocurrency Price Prediction
 
-    <h1>Deep Learning Models for Cryptocurrency Price Prediction</h1>
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-DeepLearning-orange)
+![PyTorch](https://img.shields.io/badge/PyTorch-Framework-red)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-    <div class="section box">
-        <h2>Overview</h2>
-        <p>
-            This project explores advanced machine learning and deep learning models for 
-            predicting cryptocurrency prices, specifically <b>Bitcoin (BTC)</b> and 
-            <b>Ethereum (ETH)</b>. It combines classical neural approaches with modern 
-            deep learning architectures and introduces a novel hybrid framework.
-        </p>
-    </div>
+---
 
-    <div class="section box">
-        <h2>Video 1: Classical & Recurrent Neural Models</h2>
+## 📌 Overview
 
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/Ixdz06hpYM8" 
-                    title="RBFN, GRNN, LSTM, GRU Models" 
-                    allowfullscreen></iframe>
-        </div>
+This repository presents a comprehensive study of machine learning and deep learning models for predicting cryptocurrency prices, focusing on **Bitcoin (BTC)** and **Ethereum (ETH)**.
 
-        <p>This video explains the following models:</p>
-        <ul>
-            <li><b>Radial Basis Function Network (RBFN)</b> – A neural network using radial basis functions for nonlinear approximation.</li>
-            <li><b>General Regression Neural Network (GRNN)</b> – A probabilistic neural network for regression tasks.</li>
-            <li><b>Long Short-Term Memory (LSTM)</b> – A recurrent neural network designed to capture long-term dependencies.</li>
-            <li><b>Gated Recurrent Unit (GRU)</b> – A simplified version of LSTM with fewer parameters and efficient training.</li>
-        </ul>
-    </div>
+It includes:
 
-    <div class="section box">
-        <h2>Video 2: Transformers & Hybrid Approach</h2>
+* Classical neural models
+* Recurrent neural networks
+* Transformer-based architectures
+* A **novel hybrid Transformer–RNN approach**
 
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/e4coxS26gr8" 
-                    title="Transformers and Hybrid Models" 
-                    allowfullscreen></iframe>
-        </div>
+---
 
-        <p>This video covers:</p>
-        <ul>
-            <li><b>Transformers and Attention Mechanisms</b> – Advanced architectures that capture global dependencies in time series data.</li>
-            <li><b>Novel Hybrid Approach</b> – A combination of Transformer with recurrent networks (e.g., LSTM/GRU).</li>
-            <li><b>Application</b> – Predicting cryptocurrency prices such as Bitcoin and Ethereum.</li>
-        </ul>
-    </div>
+## 🎥 Project Videos
 
-    <div class="section box">
-        <h2>Key Contributions</h2>
-        <ul>
-            <li>Comparison of multiple neural network models</li>
-            <li>Integration of classical and deep learning approaches</li>
-            <li>Development of a hybrid Transformer-based framework</li>
-            <li>Application to financial time series forecasting</li>
-        </ul>
-    </div>
+### 🔹 Video 1: Classical & Recurrent Models
 
-    <div class="section box">
-        <h2>Applications</h2>
-        <ul>
-            <li>Cryptocurrency price prediction</li>
-            <li>Financial time series analysis</li>
-            <li>Algorithmic trading strategies</li>
-        </ul>
-    </div>
+[![Watch Video](https://img.youtube.com/vi/Ixdz06hpYM8/0.jpg)](https://youtu.be/Ixdz06hpYM8)
 
-</body>
-</html>
+Covers:
+
+* Radial Basis Function Network (RBFN)
+* General Regression Neural Network (GRNN)
+* Long Short-Term Memory (LSTM)
+* Gated Recurrent Unit (GRU)
+
+---
+
+### 🔹 Video 2: Transformers & Hybrid Model
+
+[![Watch Video](https://img.youtube.com/vi/e4coxS26gr8/0.jpg)](https://youtu.be/e4coxS26gr8)
+
+Covers:
+
+* Transformers and Attention Mechanisms
+* Hybrid Transformer + LSTM/GRU
+* Application to Bitcoin & Ethereum prediction
+
+---
+
+## 🧠 Models Covered
+
+### 1. Radial Basis Function Network (RBFN)
+
+A feedforward neural network using radial basis activation functions:
+
+$$
+y(x) = \sum_{i=1}^{N} w_i \cdot \phi(||x - c_i||)
+$$
+
+---
+
+### 2. General Regression Neural Network (GRNN)
+
+A probabilistic neural network for regression:
+
+$$
+\hat{y}(x) = \frac{\sum_{i=1}^{N} y_i \exp\left(-\frac{||x - x_i||^2}{2\sigma^2}\right)}{\sum_{i=1}^{N} \exp\left(-\frac{||x - x_i||^2}{2\sigma^2}\right)}
+$$
+
+---
+
+### 3. Long Short-Term Memory (LSTM)
+
+Captures long-term dependencies using gating mechanisms:
+
+$$
+f_t = \sigma(W_f [h_{t-1}, x_t] + b_f)
+$$
+
+---
+
+### 4. Gated Recurrent Unit (GRU)
+
+A simplified LSTM variant:
+
+$$
+h_t = (1 - z_t) \odot h_{t-1} + z_t \odot \tilde{h}_t
+$$
+
+---
+
+### 5. Transformers & Attention
+
+Self-attention mechanism:
+
+$$
+\text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+$$
+
+---
+
+### 6. 🔥 Novel Hybrid Model
+
+Combines:
+
+* Transformer (global dependencies)
+* LSTM/GRU (temporal dynamics)
+
+**Architecture Flow:**
+
+```
+Input Data → Embedding → Transformer Encoder →
+Sequence Features → LSTM/GRU → Dense Layer → Output Prediction
+```
+
+---
+
+## 📊 Application: Cryptocurrency Prediction
+
+The models are applied to:
+
+* Bitcoin (BTC)
+* Ethereum (ETH)
+
+### Features Used:
+
+* Historical prices (lagged values)
+* Market indicators
+* Sentiment indicators (Fear & Greed Index)
+
+---
+
+## ⚖️ Model Comparison
+
+| Model       | Strength          | Weakness                 |
+| ----------- | ----------------- | ------------------------ |
+| RBFN        | Fast training     | Limited scalability      |
+| GRNN        | Strong regression | Memory intensive         |
+| LSTM        | Long-term memory  | Complex training         |
+| GRU         | Efficient         | Slightly less expressive |
+| Transformer | Global attention  | Data-hungry              |
+| Hybrid      | Best performance  | Higher complexity        |
+
+---
+
+## 📈 Results
+
+* Hybrid Transformer model outperforms standalone models
+* Attention improves long-range dependency learning
+* Deep learning models outperform classical approaches
+
+---
+
+## 🛠️ Tech Stack
+
+* Python
+* TensorFlow / PyTorch
+* NumPy / Pandas
+* Matplotlib / Seaborn
+
+---
+
+## 📚 Future Work
+
+* Multi-asset prediction
+* Reinforcement learning for trading
+* Real-time deployment
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## ⭐ Support
+
+If you find this useful, please ⭐ the repository!
