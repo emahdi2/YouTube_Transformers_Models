@@ -168,12 +168,6 @@ The models are applied to:
 
 ---
 
-## 📜 License
-
-This project is licensed under the MIT License.
-
----
-
 ## ⭐ Support
 
 If you find this useful, please ⭐ the repository!
